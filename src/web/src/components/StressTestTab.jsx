@@ -180,6 +180,22 @@ export default function StressTestTab({ selectedSignalForStress }) {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             <div>
               <label style={{ fontSize: '12px', color: 'var(--text-muted)', fontWeight: 600, display: 'block', marginBottom: '4px' }}>
+                Scenario Event Category
+              </label>
+              <select
+                className="glass-input"
+                value={category}
+                onChange={(e) => setCategory(e.target.value)}
+              >
+                <option value="Geopolitical">Geopolitical Conflict Shock</option>
+                <option value="Macroeconomic">Macroeconomic Rate Hike Cycle</option>
+                <option value="Credit Event">Credit Downgrade Wave</option>
+                <option value="Regulatory">Regulatory Crackdown Shock</option>
+              </select>
+            </div>
+
+            <div>
+              <label style={{ fontSize: '12px', color: 'var(--text-muted)', fontWeight: 600, display: 'block', marginBottom: '4px' }}>
                 Equity Price Shock (% drop)
               </label>
               <input

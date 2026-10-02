@@ -57,22 +57,22 @@ class WholesalePortfolioStressTester:
     ) -> StressTestResponse:
         """Run event-driven stress test simulation on wholesale banking portfolio."""
         # Determine scenario parameters
-        if signal:
+        if custom_request and (custom_request.custom_category or custom_request.equity_shock_pct is not None):
+            event_name = f"Custom Simulation ({custom_request.custom_category or 'Custom Macro'})"
+            event_cat = custom_request.custom_category or "Macroeconomic"
+            impact_sc = custom_request.custom_impact_score or 8.0
+            shocks = {
+                "equity_price_pct_change": custom_request.equity_shock_pct if custom_request.equity_shock_pct is not None else -0.15,
+                "interest_rate_bp_change": custom_request.interest_rate_bp if custom_request.interest_rate_bp is not None else 75,
+                "credit_spread_bp_change": custom_request.credit_spread_bp if custom_request.credit_spread_bp is not None else 120,
+                "pd_multiplier": 1.60
+            }
+        elif signal:
             scenario = self.find_scenario_for_signal(signal)
             event_name = f"Signal {signal.signal_id}: {signal.event_category} ({signal.target_ticker or 'Global Market'})"
             event_cat = signal.event_category
             impact_sc = signal.impact_score
             shocks = scenario["shocks"]
-        elif custom_request and custom_request.custom_category:
-            event_name = f"Custom Simulation ({custom_request.custom_category})"
-            event_cat = custom_request.custom_category
-            impact_sc = custom_request.custom_impact_score or 8.0
-            shocks = {
-                "equity_price_pct_change": custom_request.equity_shock_pct or -0.15,
-                "interest_rate_bp_change": custom_request.interest_rate_bp or 75,
-                "credit_spread_bp_change": custom_request.credit_spread_bp or 120,
-                "pd_multiplier": 1.60
-            }
         else:
             # Default fallback severe scenario
             event_name = "Baseline Severe Macroeconomic Shock"
