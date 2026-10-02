@@ -1,0 +1,58 @@
+[
+  {
+    "scenario_id": "SCEN-GEO-01",
+    "title": "Severe Geopolitical & Energy Shock",
+    "trigger_category": "Geopolitical",
+    "min_impact_score": 7.0,
+    "description": "Escalation of global conflicts leading to oil supply disruption and equity market panic.",
+    "shocks": {
+      "equity_price_pct_change": -0.12,
+      "interest_rate_bp_change": 50,
+      "credit_spread_bp_change": 140,
+      "pd_multiplier": 1.75,
+      "energy_equity_boost_pct": 0.15
+    }
+  },
+  {
+    "scenario_id": "SCEN-MACRO-02",
+    "title": "Central Bank Aggressive Rate Hike Cycle",
+    "trigger_category": "Macroeconomic",
+    "min_impact_score": 7.5,
+    "description": "Surprise interest rate spikes to suppress stubborn inflation, deflating bond values and increasing debt servicing costs.",
+    "shocks": {
+      "equity_price_pct_change": -0.08,
+      "interest_rate_bp_change": 125,
+      "credit_spread_bp_change": 90,
+      "pd_multiplier": 1.40,
+      "bond_duration_haircut_pct": -0.065
+    }
+  },
+  {
+    "scenario_id": "SCEN-CRED-03",
+    "title": "Systemic Credit Downgrade Wave",
+    "trigger_category": "Credit Event",
+    "min_impact_score": 7.0,
+    "description": "Mass credit rating downgrades in corporate syndicated loans and commercial real estate portfolios.",
+    "shocks": {
+      "equity_price_pct_change": -0.15,
+      "interest_rate_bp_change": -25,
+      "credit_spread_bp_change": 220,
+      "pd_multiplier": 2.50,
+      "lgd_increase_pct": 0.10
+    }
+  },
+  {
+    "scenario_id": "SCEN-REG-04",
+    "title": "Big Tech Regulatory Antitrust Crackdown",
+    "trigger_category": "Regulatory",
+    "min_impact_score": 8.0,
+    "description": "Coordinated international regulatory action and forced divestitures targeting mega-cap tech monopolies.",
+    "shocks": {
+      "equity_price_pct_change": -0.18,
+      "interest_rate_bp_change": 0,
+      "credit_spread_bp_change": 65,
+      "pd_multiplier": 1.20,
+      "tech_equity_drop_pct": -0.25
+    }
+  }
+]

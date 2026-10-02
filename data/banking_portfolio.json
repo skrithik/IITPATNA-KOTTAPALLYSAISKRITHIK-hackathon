@@ -1,0 +1,46 @@
+{
+  "institution": "Global Wholesale & Investment Bank (CRISIL & S&P Benchmark)",
+  "total_aum_usd": 1250000000.0,
+  "currency": "USD",
+  "as_of_date": "2026-10-02",
+  "asset_classes": [
+    {
+      "category": "Commercial & Syndicated Loans",
+      "allocation_pct": 40.0,
+      "total_value_usd": 500000000.0,
+      "holdings": [
+        {"id": "L-TECH-01", "borrower": "NVIDIA Supply Partner Co", "ticker_ref": "NVDA", "type": "Revolving Credit Line", "notional_usd": 150000000, "credit_rating": "BBB+", "interest_rate": 0.065, "pd_annual": 0.012, "lgd": 0.40},
+        {"id": "L-FIN-02", "borrower": "JPM FinTech Special Facility", "ticker_ref": "JPM", "type": "Term Loan A", "notional_usd": 200000000, "credit_rating": "A-", "interest_rate": 0.058, "pd_annual": 0.008, "lgd": 0.35},
+        {"id": "L-ENE-03", "borrower": "Exxon Offshore Expansion Project", "ticker_ref": "XOM", "type": "Project Finance Loan", "notional_usd": 150000000, "credit_rating": "BBB", "interest_rate": 0.072, "pd_annual": 0.018, "lgd": 0.45}
+      ]
+    },
+    {
+      "category": "Corporate & Sovereign Bonds",
+      "allocation_pct": 28.0,
+      "total_value_usd": 350000000.0,
+      "holdings": [
+        {"id": "B-AAPL-2032", "issuer": "Apple Inc.", "ticker_ref": "AAPL", "notional_usd": 100000000, "coupon": 0.042, "duration_years": 6.8, "credit_rating": "AA+", "dv01_usd": 68000},
+        {"id": "B-MSFT-2035", "issuer": "Microsoft Corp.", "ticker_ref": "MSFT", "notional_usd": 120000000, "coupon": 0.045, "duration_years": 7.5, "credit_rating": "AAA", "dv01_usd": 90000},
+        {"id": "B-US-10Y", "issuer": "US Treasury 10-Year Notes", "ticker_ref": null, "notional_usd": 130000000, "coupon": 0.038, "duration_years": 8.2, "credit_rating": "AAA", "dv01_usd": 106600}
+      ]
+    },
+    {
+      "category": "Derivatives & Credit Default Swaps",
+      "allocation_pct": 20.0,
+      "total_value_usd": 250000000.0,
+      "holdings": [
+        {"id": "D-CDS-BAC", "underlying": "Bank of America Credit Protection", "ticker_ref": "BAC", "contract_type": "Credit Default Swap (Long Protection)", "notional_usd": 100000000, "spread_bps": 85, "maturity_years": 3.0},
+        {"id": "D-IRS-USD", "underlying": "5Y USD Interest Rate Swap (Receive Fixed)", "ticker_ref": null, "contract_type": "Interest Rate Swap", "notional_usd": 150000000, "fixed_rate": 0.041, "maturity_years": 5.0}
+      ]
+    },
+    {
+      "category": "Equities & Structured Products",
+      "allocation_pct": 12.0,
+      "total_value_usd": 150000000.0,
+      "holdings": [
+        {"id": "E-SPX-INDEX", "asset": "S&P 500 Index Equity Basket", "ticker_ref": "SPX", "market_value_usd": 90000000, "beta": 1.0},
+        {"id": "E-TECH-GROWTH", "asset": "MegaCap Tech Equity Block", "ticker_ref": "NVDA", "market_value_usd": 60000000, "beta": 1.45}
+      ]
+    }
+  ]
+}

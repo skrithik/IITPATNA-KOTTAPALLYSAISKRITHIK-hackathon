@@ -1,0 +1,90 @@
+[
+  {
+    "id": "NEWS-001",
+    "source_type": "Financial News Feed",
+    "source_name": "Reuters Financial",
+    "timestamp": "2026-10-02T09:15:00Z",
+    "text": "NVIDIA (NVDA) announces revolutionary quantum-accelerated Blackwell GPU architecture with 40% performance gains for AI data centers, sending forward order estimates soaring across enterprise buyers.",
+    "expected_ticker": "NVDA",
+    "expected_category": "Product Launch",
+    "expected_sentiment": 0.85,
+    "expected_impact": 8.5
+  },
+  {
+    "id": "NEWS-002",
+    "source_type": "Financial News Feed",
+    "source_name": "Bloomberg Markets",
+    "timestamp": "2026-10-02T09:42:00Z",
+    "text": "Federal Reserve signals aggressive 50bps rate hike to counter stubborn inflation, sparking liquidity concerns across regional banking and high-yield credit derivative markets.",
+    "expected_ticker": "JPM",
+    "expected_category": "Macroeconomic",
+    "expected_sentiment": -0.75,
+    "expected_impact": 9.0
+  },
+  {
+    "id": "NEWS-003",
+    "source_type": "Social Media (Twitter/X)",
+    "source_name": "@WallStTraderX",
+    "timestamp": "2026-10-02T10:05:00Z",
+    "text": "BREAKING: Department of Justice launches comprehensive antitrust investigation into Microsoft (MSFT) cloud bundling practices. Potential forced divestiture of Azure AI division rumored.",
+    "expected_ticker": "MSFT",
+    "expected_category": "Regulatory",
+    "expected_sentiment": -0.82,
+    "expected_impact": 8.8
+  },
+  {
+    "id": "NEWS-004",
+    "source_type": "Social Media (Twitter/X)",
+    "source_name": "@EnergyMacroAlert",
+    "timestamp": "2026-10-02T10:30:00Z",
+    "text": "Geopolitical escalation in Strait of Hormuz halts oil tanker traffic. Brent crude surges +8% as ExxonMobil (XOM) and Chevron (CVX) ramp up domestic output projections.",
+    "expected_ticker": "XOM",
+    "expected_category": "Geopolitical",
+    "expected_sentiment": 0.65,
+    "expected_impact": 8.0
+  },
+  {
+    "id": "NEWS-005",
+    "source_type": "Financial News Feed",
+    "source_name": "Wall Street Journal",
+    "timestamp": "2026-10-02T11:00:00Z",
+    "text": "Apple (AAPL) reports stellar Q3 earnings with iPhone 16 sales exceeding analyst expectations by $4.2B, expanding gross margins to record 46.5%.",
+    "expected_ticker": "AAPL",
+    "expected_category": "Earnings/Financials",
+    "expected_sentiment": 0.90,
+    "expected_impact": 7.5
+  },
+  {
+    "id": "NEWS-006",
+    "source_type": "Financial News Feed",
+    "source_name": "Financial Times",
+    "timestamp": "2026-10-02T11:20:00Z",
+    "text": "S&P Global downgrades credit rating outlook for Commercial Real Estate debt facilities held by major European and US investment banks due to rising default rates.",
+    "expected_ticker": "BAC",
+    "expected_category": "Credit Event",
+    "expected_sentiment": -0.68,
+    "expected_impact": 7.8
+  },
+  {
+    "id": "NEWS-007",
+    "source_type": "Social Media (StockTwits)",
+    "source_name": "$AMZN_Bull",
+    "timestamp": "2026-10-02T11:45:00Z",
+    "text": "Amazon Web Services (AMZN) secures multi-billion dollar cloud contract with Department of Defense, strengthening AWS market leadership over competitors.",
+    "expected_ticker": "AMZN",
+    "expected_category": "Merger/Acquisition",
+    "expected_sentiment": 0.78,
+    "expected_impact": 7.0
+  },
+  {
+    "id": "NEWS-008",
+    "source_type": "Financial News Feed",
+    "source_name": "CNBC Live Feed",
+    "timestamp": "2026-10-02T12:10:00Z",
+    "text": "Walmart (WMT) supply chain disruptions worsen following major port worker strike on East Coast, threatening holiday inventory and increasing logistics expenditure.",
+    "expected_ticker": "WMT",
+    "expected_category": "Supply Chain",
+    "expected_sentiment": -0.58,
+    "expected_impact": 6.5
+  }
+]

@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" width="1200" height="650" style="background-color: #090d16; font-family: 'Inter', sans-serif;">
+  <defs>
+    <linearGradient id="gradRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+    <linearGradient id="gradBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="gradPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+    <linearGradient id="gradGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Header Banner -->
+  <text x="600" y="45" text-anchor="middle" fill="#ef4444" font-size="14" font-weight="700" letter-spacing="2">S&amp;P GLOBAL &amp; CRISIL CAMPUS HACKATHON 2026</text>
+  <text x="600" y="80" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="800">Unified AI/NLP Financial Risk Engine &amp; Analytics Platform</text>
+  <line x1="100" y1="100" x2="1100" y2="100" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+
+  <!-- Layer 1: Ingestion -->
+  <g transform="translate(60, 140)">
+    <rect width="230" height="420" rx="16" fill="rgba(17, 24, 39, 0.8)" stroke="#3b82f6" stroke-width="2" filter="url(#glow)"/>
+    <rect width="230" height="45" rx="16" fill="url(#gradBlue)"/>
+    <text x="115" y="28" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700">1. DATA INGESTION</text>
+    
+    <g transform="translate(20, 70)">
+      <rect width="190" height="70" rx="10" fill="rgba(0,0,0,0.4)" stroke="rgba(255,255,255,0.1)"/>
+      <text x="15" y="30" fill="#60a5fa" font-size="13" font-weight="700">Financial News Feeds</text>
+      <text x="15" y="50" fill="#9ca3af" font-size="11">Reuters, WSJ, NewsAPI</text>
+    </g>
+
+    <g transform="translate(20, 160)">
+      <rect width="190" height="70" rx="10" fill="rgba(0,0,0,0.4)" stroke="rgba(255,255,255,0.1)"/>
+      <text x="15" y="30" fill="#60a5fa" font-size="13" font-weight="700">Social Media Feeds</text>
+      <text x="15" y="50" fill="#9ca3af" font-size="11">Twitter/X, StockTwits</text>
+    </g>
+
+    <g transform="translate(20, 250)">
+      <rect width="190" height="70" rx="10" fill="rgba(0,0,0,0.4)" stroke="rgba(255,255,255,0.1)"/>
+      <text x="15" y="30" fill="#60a5fa" font-size="13" font-weight="700">Live Simulator Engine</text>
+      <text x="15" y="50" fill="#9ca3af" font-size="11">Real-time Stream Generator</text>
+    </g>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <path d="M 300 350 L 350 350" stroke="#3b82f6" stroke-width="4" stroke-dasharray="6,6" marker-end="url(#arrow)"/>
+
+  <!-- Layer 2: NLP Core Engine -->
+  <g transform="translate(360, 140)">
+    <rect width="250" height="420" rx="16" fill="rgba(17, 24, 39, 0.8)" stroke="#ef4444" stroke-width="2" filter="url(#glow)"/>
+    <rect width="250" height="45" rx="16" fill="url(#gradRed)"/>
+    <text x="125" y="28" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700">2. AI/NLP RISK ENGINE</text>
+
+    <g transform="translate(20, 65)">
+      <rect width="210" height="65" rx="10" fill="rgba(0,0,0,0.4)" stroke="rgba(255,255,255,0.1)"/>
+      <text x="15" y="28" fill="#f87171" font-size="12" font-weight="700">Entity &amp; Ticker Extractor</text>
+      <text x="15" y="46" fill="#9ca3af" font-size="10">NER for AAPL, NVDA, JPM, etc.</text>
+    </g>
+
+    <g transform="translate(20, 145)">
+      <rect width="210" height="65" rx="10" fill="rgba(0,0,0,0.4)" stroke="rgba(255,255,255,0.1)"/>
+      <text x="15" y="28" fill="#f87171" font-size="12" font-weight="700">Sentiment Score Model</text>
+      <text x="15" y="46" fill="#9ca3af" font-size="10">VADER + FinLexicon (-1 to +1)</text>
+    </g>
+
+    <g transform="translate(20, 225)">
+      <rect width="210" height="65" rx="10" fill="rgba(0,0,0,0.4)" stroke="rgba(255,255,255,0.1)"/>
+      <text x="15" y="28" fill="#f87171" font-size="12" font-weight="700">Event Category Classifier</text>
+      <text x="15" y="46" fill="#9ca3af" font-size="10">Macro, Geopolitical, Credit, etc.</text>
+    </g>
+
+    <g transform="translate(20, 305)">
+      <rect width="210" height="65" rx="10" fill="rgba(0,0,0,0.4)" stroke="rgba(255,255,255,0.1)"/>
+      <text x="15" y="28" fill="#f87171" font-size="12" font-weight="700">Impact Severity Predictor</text>
+      <text x="15" y="46" fill="#9ca3af" font-size="10">Market Impact Score (1 to 10)</text>
+    </g>
+  </g>
+
+  <!-- Arrow 2 -> 3 -->
+  <path d="M 620 350 L 670 350" stroke="#ef4444" stroke-width="4" stroke-dasharray="6,6"/>
+
+  <!-- Layer 3: API Signal Bus -->
+  <g transform="translate(680, 140)">
+    <rect width="200" height="420" rx="16" fill="rgba(17, 24, 39, 0.8)" stroke="#8b5cf6" stroke-width="2" filter="url(#glow)"/>
+    <rect width="200" height="45" rx="16" fill="url(#gradPurple)"/>
+    <text x="100" y="28" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700">3. SIGNAL BUS &amp; API</text>
+
+    <g transform="translate(15, 80)">
+      <rect width="170" height="80" rx="10" fill="rgba(0,0,0,0.4)" stroke="rgba(255,255,255,0.1)"/>
+      <text x="15" y="32" fill="#c084fc" font-size="12" font-weight="700">FastAPI REST Server</text>
+      <text x="15" y="54" fill="#9ca3af" font-size="10">/api/signals &amp; /api/ingest</text>
+    </g>
+
+    <g transform="translate(15, 200)">
+      <rect width="170" height="80" rx="10" fill="rgba(0,0,0,0.4)" stroke="rgba(255,255,255,0.1)"/>
+      <text x="15" y="32" fill="#c084fc" font-size="12" font-weight="700">Event Stream Hub</text>
+      <text x="15" y="54" fill="#9ca3af" font-size="10">Real-time Signal Broadcast</text>
+    </g>
+  </g>
+
+  <!-- Arrow 3 -> 4 -->
+  <path d="M 890 350 L 940 350" stroke="#8b5cf6" stroke-width="4" stroke-dasharray="6,6"/>
+
+  <!-- Layer 4: Downstream Applications -->
+  <g transform="translate(950, 140)">
+    <rect width="200" height="420" rx="16" fill="rgba(17, 24, 39, 0.8)" stroke="#10b981" stroke-width="2" filter="url(#glow)"/>
+    <rect width="200" height="45" rx="16" fill="url(#gradGreen)"/>
+    <text x="100" y="28" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700">4. DOWNSTREAM</text>
+
+    <g transform="translate(15, 70)">
+      <rect width="170" height="130" rx="10" fill="rgba(16,185,129,0.1)" stroke="rgba(16,185,129,0.3)"/>
+      <text x="12" y="28" fill="#34d399" font-size="12" font-weight="700">MODULE A</text>
+      <text x="12" y="48" fill="#ffffff" font-size="11" font-weight="700">Index Rebalancer</text>
+      <text x="12" y="70" fill="#9ca3af" font-size="10">• $100M S&amp;P Index</text>
+      <text x="12" y="88" fill="#9ca3af" font-size="10">• Dynamic Sentiment Weighting</text>
+      <text x="12" y="106" fill="#9ca3af" font-size="10">• Risk Floor &amp; Cap Caps</text>
+    </g>
+
+    <g transform="translate(15, 220)">
+      <rect width="170" height="130" rx="10" fill="rgba(239,68,68,0.1)" stroke="rgba(239,68,68,0.3)"/>
+      <text x="12" y="28" fill="#f87171" font-size="12" font-weight="700">MODULE B</text>
+      <text x="12" y="48" fill="#ffffff" font-size="11" font-weight="700">Banking Stress Test</text>
+      <text x="12" y="70" fill="#9ca3af" font-size="10">• $1.25B Wholesale Bank</text>
+      <text x="12" y="88" fill="#9ca3af" font-size="10">• Macro Shock Simulation</text>
+      <text x="12" y="106" fill="#9ca3af" font-size="10">• 95% &amp; 99% VaR Metrics</text>
+    </g>
+  </g>
+
+  <!-- Footer Info -->
+  <text x="600" y="605" text-anchor="middle" fill="#6b7280" font-size="12">Candidate: Kottapally Sai Skrithik | College: IIT Patna | S&amp;P Global &amp; CRISIL Campus Hackathon 2026</text>
+</svg>
